@@ -6,7 +6,16 @@ html, body {
   background-repeat: no-repeat;
 }
 
-video {
+p {
+  color: #FFF;
+  font-family: Verdana;
+}
+
+footer {
+
+}
+
+#videoBox {
   height: 25%;
   width: 75%;
   margin-left: 12.5%;
@@ -16,14 +25,32 @@ video {
 .headerLogo {
   margin-left: 37.5%;
   margin-top: 1%;
-  margin-bottom: 1
+  margin-bottom: 1%;
 }
 
 .customButton {
+  margin: 2%;
   filter: brightness(500%);
   transition: 0.08s;
 }
 
 .customButton:hover {
   filter: none;
+}
+
+#playButton {
+  margin-top: -30%;
+}
+
+/*NavBar items*/
+
+.navBarTextItem {
+  text-align: center;
+  float: left;
+  font-size: 175%;
+  transition: 0.08s;
+}
+
+.navBarTextItem:hover {
+  color: #f5b649;
 }
