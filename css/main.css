@@ -1,0 +1,29 @@
+html, body {
+  overflow-x: hidden;
+  background-color: #000;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+video {
+  height: 25%;
+  width: 75%;
+  margin-left: 12.5%;
+  opacity: 0.3;
+}
+
+.headerLogo {
+  margin-left: 37.5%;
+  margin-top: 1%;
+  margin-bottom: 1
+}
+
+.customButton {
+  filter: brightness(500%);
+  transition: 0.08s;
+}
+
+.customButton:hover {
+  filter: none;
+}
