@@ -1,8 +1,8 @@
 html, body {
   overflow-x: hidden;
-  background-color: #000;
   background-image: url(../img/background.png);
-  background-size: cover;
+  background-color: #000 !important;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -12,7 +12,7 @@ p {
 }
 
 footer {
-
+  text-align: center;
 }
 
 #videoBox {
@@ -26,16 +26,6 @@ footer {
   margin-left: 37.5%;
   margin-top: 1%;
   margin-bottom: 1%;
-}
-
-.customButton {
-  margin: 2%;
-  filter: brightness(500%);
-  transition: 0.08s;
-}
-
-.customButton:hover {
-  filter: none;
 }
 
 #playButton {
@@ -53,4 +43,81 @@ footer {
 
 .navBarTextItem:hover {
   color: #f5b649;
+}
+
+/* Footer/navbar */
+
+#scarecrowContainer {
+  margin-left: 8% !important;
+}
+#lastInLine {
+  margin-left: 12% !important;
+}
+
+.customButton {
+  margin-left: 14%;
+  margin-right: 6.25%;
+  filter: brightness(500%);
+  transition: 0.08s;
+}
+
+.customButton:hover {
+  filter: none;
+}
+#footerContainer {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+/* Mobile configurations */
+@media (max-width: 850px) {
+
+  .headerLogo {
+      margin-left: 19%;
+      margin-bottom: 40%;
+  }
+  .customButton {
+    margin: 0%;
+  }
+  #lastInLine {
+    margin: 0 !important;
+  }
+  #firstInLine {
+    margin-left: -2%;
+  }
+
+  #footerContainer {
+    display:flex;
+    flex-flow:column;
+    /*flex-wrap: nowrap;*/
+  }
+  #scarecrowContainer {
+    order: 2;
+  }
+  #footerImageContainer {
+    margin-left: 3%;
+    order: 1;
+    display:flex;
+    /*flex-flow:column;*/
+    flex-direction:row;
+    flex-wrap: nowrap;
+  }
+
+  #imgSteam {
+    order: 1;
+  }
+  #imgXbox {
+    order: 3;
+  }
+  #imgKiss {
+    order: 2;
+  }
+/*
+  #videoBox {
+    height: 40%;
+    width: 90%;
+    margin-left: 5%;
+    opacity: 0.3;
+  }
+
 }

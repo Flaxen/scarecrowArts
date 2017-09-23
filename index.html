@@ -34,11 +34,11 @@
   <body>
     <div class="container">
       <div class="row">
-        <img class="col-md-3 col-lg-3 col-sm-3 col-xs-3 headerLogo" src="img/logoSmall.png" alt="Game logo">
+        <img class="col-md-3 col-lg-3 col-sm-8 col-xs-8 headerLogo" src="img/logoSmall.png" alt="Game logo">
       </div>
 <!-- Video section -->
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-lg-12 col-sm-12 hidden-xs">
           <video id="videoBox" src="videos/trailer.mp4" poster="screenshots/03.jpg">
           </video>
           <div>
@@ -46,9 +46,13 @@
             </div>
               <img id="playButton" class="col-md-2 col-lg-2 col-sm-2 col-xs-2" src="img/play_button.png" alt="Play button">
           </div>
+        </div>
+      </div>
+
+
 <!-- Navbar -->
         <div class="row">
-          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+          <div class="col-md-12 col-lg-12 col-sm-12 hidden-xs">
             <a href="#">
               <p class="navBarTextItem col-md-3 col-lg-3 col-sm-3 col-xs-3">
                 FEATURES
@@ -72,29 +76,57 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="hidden-md hidden-lg hidden-sm col-xs-12">
+            <p style="text-align:center;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Fusce scelerisque arcu orci, et gravida diam consequat suscipit.
+              In felis metus, porta nec convallis eu, cursus et turpis.
+              Nulla at turpis at tortor hendrerit vehicula ac id orci.
+              Nam malesuada condimentum tempus. Nullam quis facilisis nisi.
+              Quisque hendrerit eu dolor eget aliquam. Interdum et malesuada
+              fames ac ante ipsum primis in faucibus. Nulla suscipit enim nec
+              sem rhoncus, in sagittis sapien pellentesque. Sed in neque augue.
+              Fusce ut quam sed nulla hendrerit iaculis. Donec in dui sit amet
+              massa vulputate porta. Maecenas malesuada massa eget placerat ultricies.
+              Pellentesque elit tortor, accumsan in nisi vitae, accumsan maximus
+              neque. Sed facilisis suscipit lacinia. Cras pharetra ante in metus
+              pellentesque, ac bibendum tortor eleifend.
+            </p>
+          </div>
+        </div>
+
+
         <footer>
           <div class="row">
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-              <a href="#">
-                <img class="customButton col-md-3 col-lg-3 col-sm-3 col-xs-3" src="img/scarecrow.png" alt="Scarecrow Arts Logo">
-              </a>
-              <a href="#">
-                <img class="customButton col-md-1 col-lg-1 col-sm-1 col-xs-1" src="img/steam.png" alt="Steam Logo">
-              </a>
-              <a href="#">
-                <img class="customButton col-md-1 col-lg-1 col-sm-1 col-xs-1" src="img/xbox.png" alt="Xbox Logo">
-              </a>
-              <a href="#">
-                <img class="customButton col-md-1 col-lg-1 col-sm-1 col-xs-1" src="img/kiss.png" alt="Kiss Logo">
-              </a>
+            <div id="footerContainer" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <div id="scarecrowContainer" class="col-md-2 col-lg-2 col-sm-12 col-xs-12">
+                <a id="imgScarecrow"href="#">
+                  <img id="firstInLine" class="customButton col-md-12 col-lg-12 col-sm-3 col-xs-10" src="img/scarecrow.png" alt="Scarecrow Arts Logo">
+                </a>
+              </div>
+
+              <div id="footerImageContainer" class="col-md-9 col-lg-9 col-sm-12 col-xs-12">
+                <a id="imgSteam" href="#">
+                  <img class="customButton col-md-1 col-lg-1 col-sm-1 col-xs-10" src="img/steam.png" alt="Steam Logo">
+                </a>
+                <a id="imgXbox" href="#">
+                  <img class="customButton col-md-1 col-lg-1 col-sm-1 col-xs-10" src="img/xbox.png" alt="Xbox Logo">
+                </a>
+                <a id="imgKiss" href="#">
+                  <img id="lastInLine" class="customButton col-md-1 col-lg-1 col-sm-1 col-xs-11" src="img/kiss.png" alt="Kiss Logo">
+                </a>
+              </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+              <p>Copyright © Scarecrow Arts 2017</p>
+            </div>
           </div>
-
         </footer>
 
 
-      </div>
 
 
 
