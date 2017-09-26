@@ -23,7 +23,7 @@ footer {
 }
 
 .headerLogo {
-  margin-left: 37.5%;
+  margin-left: 38%;
   margin-top: 1%;
   margin-bottom: 1%;
 }
@@ -67,6 +67,33 @@ footer {
 #footerContainer {
   margin-top: 4%;
   margin-bottom: 4%;
+}
+
+/* Feature exclusive elements */
+
+.featureBox {
+  background-color:rgba(0,0,0,0.6);
+  font-size:110%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.sublistTitle {
+  text-align:center;
+  font-size: 170%;
+}
+
+ul {
+  list-style-type: none;
+}
+.mainList {
+  margin-bottom: 3%;
+}
+.subListText::before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  color: #FFF;
 }
 
 /* Mobile configurations */
