@@ -15,7 +15,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css">
-  <!-- <link rel="stylesheet" type="text/css" href="css/mobileMenu.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/mobileMenu.css">
   <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -26,13 +26,40 @@
   <script src="https://use.fontawesome.com/f9fc5e29a3.js"></script>
   <script src="js/main.js"></script>
   <script src="js/videoplayer.js"></script>
-  <!-- <script src="js/mobileMenu.js"></script> -->
+  <script src="js/mobileMenu.js"></script>
   <meta charset="utf-8">
   <title>The Story Goes On :: Home</title>
 
   </head>
   <body>
+
+    <!-- Mobile menu -->
+          <div class="menuContainer col-xs-12 hidden-md hidden-lg hidden-sm">
+            <div class="col-sm-2 col-xs-2"></div>
+            <img class="col-md-3 col-lg-3 col-sm-8 col-xs-8" src="img/logoSmall.png" alt="Game logo">
+            <a href="index.html">
+              <p id="mobileMenuButton" class="menuButtons"> Features </p>
+            </a>
+            <a href="projects/">
+              <p class="menuButtons"> Gallery </p>
+            </a>
+            <a href="resume.html">
+              <p class="menuButtons"> Presskit </p>
+            </a>
+            <a href="contact.html">
+              <p class="menuButtons"> Contact </p>
+            </a>
+          </div>
+    <!-- End of mobile menu -->
+    <div class="menuButtonContainer col-xs-12 hidden-md hidden-lg hidden-sm" style="position: absolute">
+      <i class="fa fa-bars fa-2x menuToggle" aria-hidden="true"></i>
+    </div>
+
+
     <div class="container">
+<!-- Menu toggle button -->
+
+<!-- Start of landing screen -->
       <div class="row">
         <img class="col-md-3 col-lg-3 col-sm-8 col-xs-8 headerLogo" src="img/logoSmall.png" alt="Game logo">
       </div>
