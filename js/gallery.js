@@ -2,28 +2,52 @@
 
 $(document).ready(function() {
   // vid onclick playstate toggle
-  function imgageEnlarge(image) {
-    $('.imageEnlarged').stop().css('display', 'inherit')
+  function imgageEnlarge(imgURL) {
+    console.log(imgURL);
+    $('#imageEnlarged').attr('src', imgURL);
+    $('.imageEnlarged').stop().css('display', 'inherit');
+    imageEnlarged = true;
+  }
+  function imageReset() {
+    console.log("entering imageReset function");
+    $('.imageEnlarged').stop().css('display', 'none');
+    imageEnlarged = false;
   }
 
-
-
-
   var imageEnlarged = false;
-  $(".galleryImage").stop().click(function() {
+  $(".galleryImage").click(function() {
+    var imgURL = $(this).attr("src");
     if (imageEnlarged == false) {
-      imgageEnlarge(this);
+      imgageEnlarge(imgURL);
     } else {
-      imageReset(this);
+      imageReset();
     }
   });
-});
 
-//   // playbutton animation
-//   $(pButton).add(vid).mouseover(function() {
-//     $(pButton).stop().css('filter','none')
-//   });
-//   $(pButton).add(vid).mouseout(function() {
-//     $(pButton).stop().css('filter','brightness(500%)')
-//   });
+});
+// $('body').click(function() {
+//   if (imageEnlarged == true) {
+//     $("body").click(function() {
+//       var imgURL = $(this).attr("src");
+//       imageReset();
+//       imageEnlarged = false;
+//     });
+//   } else if (imageEnlarged == false) {
+//     $(".galleryImage").click(function() {
+//       var imgURL = $(this).attr("src");
+//       imgageEnlarge(imgURL);
+//       imageEnlarged = true;
+//     });
+//   }
+// });
+
+
+
+// $(".galleryImage").click(function() {
+//   var imgURL = $(this).attr("src");
+//   if (imageEnlarged == false) {
+//     imgageEnlarge(imgURL);
+//   } else {
+//     imageReset();
+//   }
 // });

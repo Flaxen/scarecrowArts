@@ -1,4 +1,8 @@
-html, body {
+html {
+  background-color: #000 !important;
+}
+
+body {
   overflow-x: hidden;
   background-image: url(../img/background.png);
   background-color: #000 !important;
@@ -98,11 +102,13 @@ ul {
 
 /* Gallery exclusive elements */
 .galleryRow {
-  margin-bottom: 1%;
   margin-left: 16.66%;
 }
 
 .galleryImage {
+  margin: 0 !important;
+  padding: 0 !important;
+  padding: 0.5% !important;
 }
 
 .imageEnlarged {
