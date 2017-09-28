@@ -8,6 +8,7 @@ body {
   background-color: #000 !important;
   background-size: 100%;
   background-repeat: no-repeat;
+
 }
 
 p {
@@ -121,6 +122,17 @@ ul {
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
+/* Presskit elements */
+.pressBox {
+  margin-left: 3%;
+}
+.pressContainer {
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  margin-left: 8%;
+}
+
+
+
 
 /* Mobile configurations */
 @media (max-width: 850px) {
@@ -164,6 +176,14 @@ ul {
   }
   #imgKiss {
     order: 2;
+  }
+
+  .pressContainer {
+    margin: 0;
+    text-align: center;
+  }
+  .pressBox {
+    margin: 0;
   }
 
 /*
