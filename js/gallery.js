@@ -1,16 +1,16 @@
 
 
 $(document).ready(function() {
-  // vid onclick playstate toggle
+  // enlarge image toggle function
   function imgageEnlarge(imgURL) {
     console.log(imgURL);
     $('#imageEnlarged').attr('src', imgURL);
-    $('.imageEnlarged').stop().css('display', 'inherit');
+    $('#imageEnlargedContainer').stop().css('display', 'inherit');
     imageEnlarged = true;
   }
   function imageReset() {
     console.log("entering imageReset function");
-    $('.imageEnlarged').stop().css('display', 'none');
+    $('#imageEnlargedContainer').stop().css('display', 'none');
     imageEnlarged = false;
   }
 
@@ -19,35 +19,42 @@ $(document).ready(function() {
     var imgURL = $(this).attr("src");
     if (imageEnlarged == false) {
       imgageEnlarge(imgURL);
-    } else {
-      imageReset();
     }
+  });
+  $("#imageEnlargedContainer").click(function(e) {
+    if (!$(e.target).hasClass('fa')) {
+      if (imageEnlarged == true) {
+        imageReset();
+      }
+    }
+  });
+  // image switch from enlarged image
+
+  function nextImage(value) {
+    var nextImg;
+    var nextImg;
+    var imgNr;
+    // sperates image url nr from url
+    var urlImg = $('#imageEnlarged').attr('src');
+    urlImg = urlImg.replace('.jpg', '');
+    urlImg = urlImg.replace('screenshots/', '');
+    console.log(urlImg);
+    var fullUrl = urlImg + ".jpg";
+    // increases/decreases img nr by 1
+    imgNr = parseInt(urlImg) + value;
+    if (imgNr < 10) {
+      nextImg = "screenshots/" + 0 + imgNr + ".jpg";
+    } else {
+      nextImg = "screenshots/" + imgNr + ".jpg";
+    }
+    $('#imageEnlarged').attr('src', nextImg);
+  }
+
+  $('.fa-chevron-left').click(function() {
+    nextImage(1);
+  });
+  $('.fa-chevron-right').click(function() {
+    nextImage(-1);
   });
 
 });
-// $('body').click(function() {
-//   if (imageEnlarged == true) {
-//     $("body").click(function() {
-//       var imgURL = $(this).attr("src");
-//       imageReset();
-//       imageEnlarged = false;
-//     });
-//   } else if (imageEnlarged == false) {
-//     $(".galleryImage").click(function() {
-//       var imgURL = $(this).attr("src");
-//       imgageEnlarge(imgURL);
-//       imageEnlarged = true;
-//     });
-//   }
-// });
-
-
-
-// $(".galleryImage").click(function() {
-//   var imgURL = $(this).attr("src");
-//   if (imageEnlarged == false) {
-//     imgageEnlarge(imgURL);
-//   } else {
-//     imageReset();
-//   }
-// });

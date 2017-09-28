@@ -113,9 +113,14 @@ ul {
 
 .imageEnlarged {
   margin-left: 16%;
+  margin-top: 5%;
+}
+#imageEnlargedContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
 }
-
 
 /* Mobile configurations */
 @media (max-width: 850px) {
