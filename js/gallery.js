@@ -28,19 +28,19 @@ $(document).ready(function() {
       }
     }
   });
-  // image switch from enlarged image
+// image switch from enlarged image
 
   function nextImage(value) {
     var nextImg;
     var nextImg;
     var imgNr;
-    // sperates image url nr from url
+  // sperates image url nr from url
     var urlImg = $('#imageEnlarged').attr('src');
     urlImg = urlImg.replace('.jpg', '');
     urlImg = urlImg.replace('screenshots/', '');
-    console.log(urlImg);
+    // console.log(urlImg);
     var fullUrl = urlImg + ".jpg";
-    // increases/decreases img nr by 1
+  // increases/decreases img nr by 1
     imgNr = parseInt(urlImg) + value;
     if (imgNr < 10) {
       nextImg = "screenshots/" + 0 + imgNr + ".jpg";
@@ -49,12 +49,25 @@ $(document).ready(function() {
     }
     $('#imageEnlarged').attr('src', nextImg);
   }
-
+// Image navigation, mouse
   $('.fa-chevron-left').click(function() {
-    nextImage(1);
-  });
-  $('.fa-chevron-right').click(function() {
     nextImage(-1);
   });
+  $('.fa-chevron-right').click(function() {
+    nextImage(1);
+  });
+// Image navigation, keyboard
+  $(document).keydown(function(e) {
+    if (imageEnlarged == true) {
+      // console.log(e.which);
+      if (e.which == 37) { //left
+        nextImage(-1);
+      } else if (e.which == 39) {
+        nextImage(1);
+      }
+    }
+  });
+// Mobile swipe
+
 
 });

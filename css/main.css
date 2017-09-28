@@ -113,8 +113,8 @@ ul {
 }
 
 .imageEnlarged {
-  margin-left: 16%;
   margin-top: 5%;
+  position: absolute;
 }
 #imageEnlargedContainer {
   width: 100%;
@@ -131,7 +131,14 @@ ul {
   margin-left: 8%;
 }
 
-
+.fa {
+  color: #FFF;
+  text-align: center;
+  margin-top: 20%;
+}
+.fa-chevron-left {
+  margin-left: 10%;
+}
 
 
 /* Mobile configurations */
@@ -185,6 +192,35 @@ ul {
   .pressBox {
     margin: 0;
   }
+  .imageEnlarged {
+    margin-top: -5%;
+  }
+  #imageEnlargedContainer {
+    background-color: rgba(0, 0, 0, 0);
+    display: inherit;
+    height: 100%;
+  }
+  .fa {
+    margin: 0;
+  }
+  .fa-chevron-left {
+    float: left;
+    position: absolute;
+    margin-top: 12%;
+  }
+  .fa-chevron-right {
+    float: right;
+    position: absolute;
+    margin-top: 12%;
+  }
+  .galleryRow {
+    margin: 0;
+    padding: 0;
+  }
+  .galleryRow > img {
+    padding: 1%;
+  }
+
 
 /*
   #videoBox {

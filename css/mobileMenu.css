@@ -10,6 +10,7 @@ align-content: center;
 .menuToggle {
   color: #FFFFFF;
   float: right;
+  margin: 0 !important;
 }
 
 /* Actual Menu */
