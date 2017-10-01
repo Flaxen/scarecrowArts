@@ -19,15 +19,14 @@ $(document).ready(function() {
     var imgURL = $(this).attr("src");
     if (imageEnlarged == false) {
       imgageEnlarge(imgURL);
-      $("body").css("position","fixed");
-      // $("body").css("overflow","hidden");
+      $("html").css("position","fixed");
     }
   });
   $("#imageEnlargedContainer").click(function(e) {
     if (!$(e.target).hasClass('fa')) {
       if (imageEnlarged == true) {
         imageReset();
-        $("body").css("position","relative");
+        $("html").css("position","relative");
       }
     }
   });
