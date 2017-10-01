@@ -3,12 +3,13 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   background-image: url(../img/background.png);
   background-color: #000 !important;
   background-size: 100%;
   background-repeat: no-repeat;
-
+  max-width: 100%;
+  min-height: 100vh;
 }
 
 p {
@@ -18,6 +19,8 @@ p {
 
 footer {
   text-align: center;
+  position: absolute;
+  bottom: 0;
 }
 
 #videoBox {
@@ -138,7 +141,11 @@ ul {
 }
 .fa-chevron-left {
   margin-left: 10%;
+  /*position: absolute;*/
 }
+/*.fa-chevron-left {
+  position: absolute;
+}*/
 
 
 /* Mobile configurations */
@@ -156,6 +163,10 @@ ul {
   }
   #firstInLine {
     margin-left: -2%;
+  }
+  footer {
+    position: relative;
+    
   }
 
   #footerContainer {
@@ -193,12 +204,12 @@ ul {
     margin: 0;
   }
   .imageEnlarged {
-    margin-top: -5%;
+    margin-top: 20%;
   }
   #imageEnlargedContainer {
-    background-color: rgba(0, 0, 0, 0);
-    display: inherit;
-    height: 100%;
+    /*background-color: rgba(0, 0, 0, 0);*/
+    /*display: inherit;*/
+    height: 100vh;
   }
   .fa {
     margin: 0;
