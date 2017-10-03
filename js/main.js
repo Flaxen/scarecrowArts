@@ -19,10 +19,10 @@ $(document).ready(function() {
   // Chrome 1+
   var isChrome = !!window.chrome && !!window.chrome.webstore;
 
-  console.log('isFirefox',isFirefox);
-  console.log('isChrome',isChrome);
-  console.log('isIE',isIE);
-  console.log('isSafari',isSafari);
+  // console.log('isFirefox',isFirefox);
+  // console.log('isChrome',isChrome);
+  // console.log('isIE',isIE);
+  // console.log('isSafari',isSafari);
 
 // IE navbar hover effect
   if (isIE == true) {
