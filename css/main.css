@@ -63,10 +63,19 @@ footer {
   margin-left: 14%;
   margin-right: 6.25%;
   filter: brightness(500%);
+  -webkit-filter: brightness(500%);
+  -moz-filter: brightness(500%);
+  -o-filter: brightness(500%);
+  -ms-filter: brightness(500%);
   transition: 0.08s;
 }
 .customButton:hover {
   filter: none;
+  filter: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
 }
 #footerContainer {
   margin-top: 4%;
@@ -109,6 +118,7 @@ ul {
   margin: 0 !important;
   padding: 0 !important;
   padding: 0.5% !important;
+  cursor: pointer;
 }
 .imageEnlarged {
   margin-top: 5%;
@@ -132,6 +142,7 @@ ul {
   color: #FFF;
   text-align: center;
   margin-top: 20%;
+  cursor: pointer;
 }
 .fa-chevron-left {
   margin-left: 10%;
